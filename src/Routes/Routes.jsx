@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import HomeLayout from "../Layout/HomeLayout";
 import Home from "../Pages/Home";
 import Profile from "../Pages/Profile";
+import Loading from "../Pages/Loading";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
                 path: "/",
                 element:  <Home></Home>,
                 loader:  () => fetch("/public/skill.json"),
+                hydrateFallbackElement: <Loading></Loading>
             },
         ]
         

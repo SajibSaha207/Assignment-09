@@ -32,10 +32,12 @@ const SkillCards = ({ skill }) => {
             skill.description
           )}
         </div>
-     <p className="flex items-center gap-2"><MdAttachMoney className="text-black-500" />
+        <div className="flex justify-between">
+     <p className="flex items-center"><MdAttachMoney className="text-black-500" />
         <span>{skill.price}</span></p>
         <p className="flex items-center gap-2"><FaStar className="text-yellow-500" />
           <span>{skill.rating}</span></p> 
+          </div>
    
       </div>
     </div>
