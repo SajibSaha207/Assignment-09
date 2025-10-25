@@ -1,31 +1,50 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 import HomeLayout from "../Layout/HomeLayout";
 import Home from "../Pages/Home";
 import Profile from "../Pages/Profile";
 import Loading from "../Pages/Loading";
+import Login from "../Pages/Login";
+import SignUp from "../Pages/SignUp";
+import AuthLayout from "../Layout/AuthLayout";
 
 export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <HomeLayout></HomeLayout>,
-        children: [
-            {
-                index: true,
-                element: <Home></Home>,
-            },
-            {
-                path: "/profile",
-                element: <Profile></Profile>
-            },
-            {
-                path: "/",
-                element:  <Home></Home>,
-                loader:  () => fetch("/public/skill.json"),
-                hydrateFallbackElement: <Loading></Loading>
-            },
-        ]
-        
-    }
-])
+  // 🏠 Main site layout (with Navbar, Hero, Footer)
+  {
+    path: '/',
+    element: <HomeLayout></HomeLayout>,
+    children: [
+      {
+        index: true,
+        element: <Home></Home>,
+      },
+      {
+        path: "/profile",
+        element: <Profile></Profile>,
+      },
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch("/skill.json"),
+        hydrateFallbackElement: <Loading></Loading>,
+      },
+    ],
+  },
+
+  // 🔑 Auth layout (NO Navbar, NO Hero, NO Footer)
+  {
+    path: '/auth',
+    element: <AuthLayout></AuthLayout>,
+    children: [
+      {
+        path: 'login',
+        element: <Login></Login>,
+      },
+      {
+        path: 'signup',
+        element: <SignUp></SignUp>,
+      },
+    ],
+  },
+]);
 
 export default router;
