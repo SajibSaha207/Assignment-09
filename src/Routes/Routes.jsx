@@ -15,8 +15,14 @@ export const router = createBrowserRouter([
             {
                 path: "/profile",
                 element: <Profile></Profile>
-            }
+            },
+            {
+                path: "/",
+                element:  <Home></Home>,
+                loader:  () => fetch("/public/skill.json"),
+            },
         ]
+        
     }
 ])
 
