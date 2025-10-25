@@ -1,0 +1,74 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners.",
+    "image": "https://i.ibb.co.com/Q3qymwk7/image.png",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers.",
+    "image": "https://i.ibb.co.com/F4wbtsTR/image.png",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Nana Islam",
+    "providerEmail": "nana@skillswap.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Gentle yoga routines for stress relief.",
+    "image": "https://i.ibb.co.com/TBFdZv5W/image.png",
+    "category": "Fitness"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Basic HTML & CSS",
+    "providerName": "Rafi Ahmed",
+    "providerEmail": "rafi@skillswap.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Build your first website with HTML & CSS.",
+    "image": "https://i.ibb.co.com/9mRKQk4T/image.png",
+    "category": "Coding"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Photography Basics",
+    "providerName": "Lina Roy",
+    "providerEmail": "lina@skillswap.com",
+    "price": 30,
+    "rating": 4.5,
+    "slotsAvailable": 3,
+    "description": "Learn DSLR settings, composition and lighting.",
+    "image": "https://i.ibb.co.com/99pzgS9m/image.png",
+    "category": "Photography"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Beginner Spannish",
+    "providerName": "Carlos Diaz",
+    "providerEmail": "carlos@skillswap.com",
+    "price": 12,
+    "rating": 4.4,
+    "slotsAvailable": 6,
+    "description": "Basic conversational Spanish for travelers.",
+    "image": "https://i.ibb.co.com/XrmNnyQv/image.png",
+    "category": "Language"
+  }
+]
