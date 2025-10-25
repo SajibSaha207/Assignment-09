@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SkillCards from '../Components/SkillCards';
-import Skills from "/skill.json"
- 
 
 const Home = () => {
-    return (
+  const [skills, setSkills] = useState([]);
 
-    );
+  useEffect(() => {
+    fetch("/skill.json")
+      .then((res) => res.json())
+      .then((data) => setSkills(data))
+      .catch((err) => console.error("Error loading skills:", err));
+  }, []);
+
+  return (
+    <div>
+      <section>
+        <h2 className="font-bold text-2xl mb-4 justify-self-start">Popular Skills</h2>
+
+        <div className="grid md:grid-cols-3 gap-5">
+          {skills.map((s) => (
+            <SkillCards key={s.skillId} skill={s} />
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 };
 
 export default Home;
