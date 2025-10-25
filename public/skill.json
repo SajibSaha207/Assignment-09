@@ -7,7 +7,7 @@
     "price": 20,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "Acoustic guitar classes for complete beginners.",
+    "description": "Acoustic guitar classes for complete beginners. Learning to play the guitar is an exciting and rewarding journey that opens the door to creativity and self-expression. Beginner guitar lessons are designed to help new learners build a strong foundation by focusing on the essential skills needed to play confidently. In the early stages, students are introduced to the basic parts of the guitar, how to tune it, and how to hold it properly. Lessons usually begin with simple chords such as C, G, D, and E minor, which form the basis of many popular songs.Rhythm and strumming patterns are also key components of beginner lessons, helping students develop timing and coordination. As learners progress, they start practicing easy songs to improve finger strength and muscle memory. Reading chord charts and simple tablature is often introduced to make learning easier and more enjoyable.Patience and consistent practice are crucial in this stage. Even a few minutes of daily playing can lead to noticeable improvement over time. With the right guidance and motivation, beginner guitar lessons not only teach technical skills but also inspire a lifelong love for music. Whether played for fun or as a step toward a musical career, the guitar is a versatile and expressive instrument for everyone.",
     "image": "https://i.ibb.co.com/Q3qymwk7/image.png",
     "category": "Music"
   },
@@ -19,7 +19,7 @@
     "price": 10,
     "rating": 4.6,
     "slotsAvailable": 5,
-    "description": "Conversational English sessions for non-native speakers.",
+    "description": "Conversational English sessions for non-native speakers. Spoken English practice is an important step for anyone who wants to speak English fluently and confidently. It helps improve pronunciation, vocabulary, grammar, and listening skills while building confidence in real-life communication. Regular conversation practice, whether with friends, teachers, or language apps, allows learners to overcome hesitation and speak more naturally. Listening to English songs, podcasts, and movies also helps in understanding different accents and improving comprehension. Activities like storytelling, group discussions, and role plays make learning interactive and fun. The key is consistency — practicing a little every day brings steady improvement. With patience and dedication, anyone can develop strong spoken English skills and communicate effectively in any situation.",
     "image": "https://i.ibb.co.com/F4wbtsTR/image.png",
     "category": "Language"
   },
@@ -31,7 +31,7 @@
     "price": 15,
     "rating": 4.7,
     "slotsAvailable": 4,
-    "description": "Gentle yoga routines for stress relief.",
+    "description": "Gentle yoga routines for stress relief. Yoga for beginners is a gentle and effective way to improve both physical and mental well-being. It focuses on basic postures, breathing techniques, and relaxation practices that help increase flexibility, strength, and balance. Beginner yoga sessions usually start with simple poses such as Mountain Pose, Downward Dog, and Child’s Pose, which are easy to learn yet highly beneficial for the body. Along with physical exercises, yoga emphasizes mindfulness and deep breathing to reduce stress and improve concentration. Regular practice can enhance posture, boost energy, and promote inner peace. The key is to move at your own pace, listen to your body, and stay consistent. With dedication and patience, yoga becomes more than just exercise — it becomes a holistic lifestyle that nurtures both the mind and body.",
     "image": "https://i.ibb.co.com/TBFdZv5W/image.png",
     "category": "Fitness"
   },
@@ -43,7 +43,7 @@
     "price": 25,
     "rating": 4.9,
     "slotsAvailable": 2,
-    "description": "Build your first website with HTML & CSS.",
+    "description": "Build your first website with HTML & CSS. Basic HTML and CSS are the foundation of web development, allowing you to create and design websites from scratch. HTML (HyperText Markup Language) provides the structure of a webpage by using elements such as headings, paragraphs, images, and links. It defines what content appears on the page. CSS (Cascading Style Sheets), on the other hand, controls the visual appearance — including colors, fonts, layouts, and spacing. By combining HTML and CSS, beginners can build attractive and functional web pages that look professional. Learning these two languages helps you understand how websites work and prepares you for more advanced topics like JavaScript and responsive design. With consistent practice, you can create your own portfolio, blogs, or landing pages. Basic HTML and CSS not only build technical skills but also spark creativity in web design and digital creation.",
     "image": "https://i.ibb.co.com/9mRKQk4T/image.png",
     "category": "Coding"
   },
@@ -55,7 +55,7 @@
     "price": 30,
     "rating": 4.5,
     "slotsAvailable": 3,
-    "description": "Learn DSLR settings, composition and lighting.",
+    "description": "Learn DSLR settings, composition and lighting. Photography basics are all about understanding how to capture beautiful and meaningful images using your camera. The key elements include exposure, composition, and lighting. Exposure depends on three main settings — aperture, shutter speed, and ISO — which together control how much light enters the camera. Learning to balance these settings helps you take clear and well-lit photos. Composition focuses on how subjects are arranged in the frame, with techniques like the rule of thirds and leading lines helping to create more engaging pictures. Lighting plays a vital role too; natural light often gives the best results, but learning to use artificial light can add creativity and mood to your shots. Beginners should also practice focusing, framing, and using different angles to tell a story through their photos. With patience, regular practice, and a good eye for detail, anyone can master the basics of photography and capture moments that last a lifetime.",
     "image": "https://i.ibb.co.com/99pzgS9m/image.png",
     "category": "Photography"
   },
@@ -67,7 +67,7 @@
     "price": 12,
     "rating": 4.4,
     "slotsAvailable": 6,
-    "description": "Basic conversational Spanish for travelers.",
+    "description": "Basic conversational Spanish for travelers.Beginner Spanish is the first step toward learning one of the most widely spoken languages in the world. It focuses on building a strong foundation in vocabulary, pronunciation, and basic grammar. Learners start with common greetings, numbers, days of the week, and simple phrases used in daily conversations. Understanding sentence structure and verb conjugation, especially of regular verbs like hablar (to speak) and comer (to eat), is an important part of early lessons. Listening to native speakers through songs, videos, or podcasts helps improve pronunciation and comprehension. Speaking practice, even with short sentences, boosts confidence and fluency over time. Consistency is key — practicing a little every day makes learning easier and more natural. With patience and dedication, beginner Spanish learners can quickly start communicating in real-life situations and enjoy the beauty of the Spanish language and culture.",
     "image": "https://i.ibb.co.com/XrmNnyQv/image.png",
     "category": "Language"
   }

@@ -8,7 +8,7 @@ const Home = () => {
     fetch("/skill.json")
       .then((res) => res.json())
       .then((data) => setSkills(data))
-      .catch((err) => console.error("Error loading skills:", err));
+       
   }, []);
 
   return (

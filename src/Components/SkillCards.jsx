@@ -1,17 +1,40 @@
 import React from "react";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { MdAttachMoney } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const SkillCards = ({ skill }) => {
   return (
-    <div className="card bg-base-100 shadow-md p-4 rounded-lg">
+    <div className="card bg-base-100 shadow-md p-4 rounded-lg ">
       <img
         src={skill.image}
         alt={skill.skillName}
         className="rounded-lg mb-3 w-full h-40 object-cover"
       />
-      <h3 className="font-bold text-lg">{skill.skillName}</h3>
-      <p className="text-sm text-gray-600">{skill.description}</p>
-      <p className="font-semibold mt-2">💰 ${skill.price}</p>
-      <p className="text-yellow-500">⭐ {skill.rating}</p>
+
+      <div className="p-4 space-y-3">
+        <h2 className="card-title text-2xl font-semibold text-gray-800">
+          {skill.skillName}
+        </h2>
+
+        <div className="text-sm text-gray-700">
+          {skill.description.length > 150 ? (
+            <>
+              {skill.description.slice(0, 150)}...
+              <Link
+                to={`/skill-description/${skill.skillId}`}
+                className="text-primary font-bold cursor-pointer hover:underline ml-1"
+              >
+                View Details
+              </Link>
+            </>
+          ) : (
+            skill.description
+          )}
+        </div>
+
+   
+      </div>
     </div>
   );
 };
