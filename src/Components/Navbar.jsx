@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Link } from 'react-router';
 import logo from "../assets/skillswap.jpg"
 import userimg from "../assets/user.png"
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
+    // const { user } = use(AuthContext); 
     return (
         <>
        
@@ -15,13 +17,15 @@ const Navbar = () => {
   </div>
 
   {/* Links centered */}
+  {/* <div className=''>{user && user.email}</div> */}
   <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-5 font-semibold">
     <Link to='/'>Home</Link>
-    <Link to='/about us'>About Us</Link>
-    <Link to='/profile'>My Profile</Link>
+    <Link to='/auth/aboutus'>About Us</Link>
+    <Link to="/auth/profile">My Profile</Link>
   </div>
   <div className='login-btn flex gap-5'>
     <img src={userimg} alt="" />
+    {/* {user ? " " : } */}
     <Link to="/auth/login" className='btn btn-secondary '>Login</Link>
   </div>
 </div>

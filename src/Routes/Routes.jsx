@@ -6,6 +6,7 @@ import Loading from "../Pages/Loading";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import AuthLayout from "../Layout/AuthLayout";
+import AboutUs from "../Pages/AboutUs";
 
 export const router = createBrowserRouter([
   // 🏠 Main site layout (with Navbar, Hero, Footer)
@@ -17,16 +18,18 @@ export const router = createBrowserRouter([
         index: true,
         element: <Home></Home>,
       },
-      {
-        path: "/profile",
-        element: <Profile></Profile>,
+         {
+        path: 'login',
+        element: <Login></Login>,
       },
+  
       {
-        path: "/",
+        path: "home",
         element: <Home></Home>,
         loader: () => fetch("/skill.json"),
         hydrateFallbackElement: <Loading></Loading>,
       },
+        
     ],
   },
 
@@ -36,13 +39,22 @@ export const router = createBrowserRouter([
     element: <AuthLayout></AuthLayout>,
     children: [
       {
-        path: 'login',
+        path: '/auth/login',
         element: <Login></Login>,
       },
       {
-        path: 'signup',
+        path: '/auth/signup',
         element: <SignUp></SignUp>,
       },
+       {
+        path: "profile",
+        element: <Profile></Profile>,
+      },
+       {
+        path: "aboutus",
+        element: <AboutUs></AboutUs>,
+      },
+       
     ],
   },
 ]);

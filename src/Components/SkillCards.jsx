@@ -27,6 +27,7 @@ const SkillCards = ({ skill }) => {
               >
                 View Details
               </Link>
+              
             </>
           ) : (
             skill.description
@@ -41,6 +42,7 @@ const SkillCards = ({ skill }) => {
    
       </div>
     </div>
+  
   );
 };
 
