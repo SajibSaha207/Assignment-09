@@ -1,11 +1,29 @@
  
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import logo from "../assets/skillswap.jpg"
 import userimg from "../assets/user.png"
 import { AuthContext } from "../Provider/AuthProvider";
+import {  useContext } from 'react';
+import { signOut } from 'firebase/auth';
+import { auth } from '../Firebase/Firebase.config';
 
 const Navbar = () => {
-    // const { user } = use(AuthContext); 
+    const { user, setUser } = useContext(AuthContext); 
+    const navigate = useNavigate();
+
+
+    const handleLogout = (event)=>{
+      event.preventDefault();
+      signOut(auth)
+      .then(()=>{
+         setUser(null);
+      navigate("/auth/login");
+      });
+   
+      // setUser(false);
+
+
+    };
     return (
         <>
        
@@ -24,9 +42,26 @@ const Navbar = () => {
     <Link to="/auth/profile">My Profile</Link>
   </div>
   <div className='login-btn flex gap-5'>
-    <img src={userimg} alt="" />
-    {/* {user ? " " : } */}
-    <Link to="/auth/login" className='btn btn-secondary '>Login</Link>
+     { user ? (
+      <>
+    <img src={user.photoURL || userimg} alt=""
+    className='  rounded   cursor-pointer'
+    title={user?.displayName || "User"}
+    /> 
+     {/* )}
+    {user ? ( */}
+  <button onClick={handleLogout} className="btn btn-secondary">
+    Logout
+  </button>
+  </>
+) : (
+  <Link to="/auth/login" className="btn btn-secondary">
+    Login
+  </Link>
+)}
+
+            
+   
   </div>
 </div>
 
