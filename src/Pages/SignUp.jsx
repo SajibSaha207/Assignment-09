@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { auth } from '../Firebase/Firebase.config';
 import Swal from "sweetalert2";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const SignUp = () => {
   const [error, setError] = useState('')
   const [success, setSucess] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
 
 const handleSignUp = (e) =>{
 
@@ -66,6 +68,11 @@ useEffect(() => {
 
 
 
+const handleTooglePasswordShow = (event)=>{
+  event.preventDefault();
+  setShowPassword(!showPassword)
+}
+
     return (
         <div className='flex justify-center min-h-screen items-center'>
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -82,8 +89,13 @@ useEffect(() => {
             
           <label className="label">Email</label>
           <input type="email" name='email' className="input" placeholder="Email" />
-          <label className="label">Password</label>
-          <input type="password" name='password' className="input" placeholder="Password" />
+
+     <label className="label">Password</label>
+      <div className='relative'>
+          <input type={showPassword ? 'text' : 'password'} name='password' className="input" placeholder="Password" />
+          <button onClick={handleTooglePasswordShow} className="btn btn-xs top-2 right-3 absolute">{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</button>
+       </div>
+       
  
           <button className="btn btn-neutral mt-4">Sign Up</button>
           <button className="btn bg-white text-black border-[#e5e5e5]">
