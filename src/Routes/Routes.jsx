@@ -6,7 +6,8 @@ import Loading from "../Pages/Loading";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import AuthLayout from "../Layout/AuthLayout";
-import AboutUs from "../Pages/AboutUs";
+import SkillDetails from "../Pages/SkillDetails";
+ 
 
 export const router = createBrowserRouter([
   // 🏠 Main site layout (with Navbar, Hero, Footer)
@@ -51,8 +52,8 @@ export const router = createBrowserRouter([
         element: <Profile></Profile>,
       },
        {
-        path: "aboutus",
-        element: <AboutUs></AboutUs>,
+        path: "skilldetails",
+        element:  <SkillDetails></SkillDetails>,
       },
        
     ],

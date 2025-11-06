@@ -20,7 +20,7 @@ const Navbar = () => {
   {/* <div className=''>{user && user.email}</div> */}
   <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-5 font-semibold">
     <Link to='/'>Home</Link>
-    <Link to='/auth/aboutus'>About Us</Link>
+    <Link to='/auth/skilldetails'>Skill Details</Link>
     <Link to="/auth/profile">My Profile</Link>
   </div>
   <div className='login-btn flex gap-5'>
