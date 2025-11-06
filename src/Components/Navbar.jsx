@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+ 
 import { Link } from 'react-router';
 import logo from "../assets/skillswap.jpg"
 import userimg from "../assets/user.png"

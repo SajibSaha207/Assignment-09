@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SkillCards from '../Components/SkillCards';
 import TopRated from '../Components/TopRated';
+import HowItWorks from '../Components/HowItWorks';
  
 
 const Home = () => {
@@ -30,15 +31,19 @@ const Home = () => {
           ))}
         </div>
 
-        
-      </section>
-     
-   <div className= "">
+           <div className= "">
         <h2 className="font-bold text-2xl justify-self-start mt-10">Top Rated Provider</h2>
        </div>
+      </section>
+     
+
+   
     </div>
+     
     
   );
+   
 };
+
 
 export default Home;

@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import HeroSlider from '../Components/HeroSlider';
 import TopRated from '../Components/TopRated';
+import HowItWorks from '../Components/HowItWorks';
 
 const HomeLayout = () => {
     return (
@@ -17,6 +18,9 @@ const HomeLayout = () => {
             <Outlet></Outlet>
            <section className='py-10'>
              <TopRated></TopRated>
+            <section className='py-10'>
+               <HowItWorks></HowItWorks>
+            </section>
            </section>
              <section className='py-10'>
             <Footer></Footer>
