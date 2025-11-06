@@ -1,24 +1,89 @@
-import React from 'react';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
+import { auth } from '../Firebase/Firebase.config';
+import Swal from "sweetalert2";
 
 const SignUp = () => {
+  const [error, setError] = useState('')
+  const [success, setSucess] = useState('')
+
+const handleSignUp = (e) =>{
+
+  e.preventDefault();
+  const email = e.target.email.value;
+  const password = e.target.password.value;
+  console.log('signup click',e.target.email.value)
+
+  //password validation for 6 digit
+  const passwordPattern = /^.{6,}$/;
+
+//validation for lower and upper case
+const casePattern = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
+
+
+  if(!passwordPattern.test(password)){
+    console.log('password not match')
+    setError('Password must be 6 character or longer');
+    return;
+  }
+  else if(!casePattern.test(password)){
+    setError('Password must have at least one uppercase and one lower case Character');
+    return;
+  }
+
+//RESET STATUS
+setError('')
+setSucess(false);
+
+
+  //Create user with email and pass
+  createUserWithEmailAndPassword(auth,email,password)
+  .then(result =>{
+ console.log('after create user',result.user)
+ setSucess(true);
+ e.target.reset();
+  })
+  
+ 
+  .catch(error =>{
+    console.log('error happend',error.message)
+    setError(error.message)
+  })
+}
+
+useEffect(() => {
+  if (success) {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Account created successfully!",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
+}, [success]);
+
+
+
     return (
         <div className='flex justify-center min-h-screen items-center'>
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
         <h2 className='font-semibold text-2xl text-center py-5'>Create Your Account</h2>
       <div className="card-body">
-        <fieldset className="fieldset">
+      <form onSubmit={handleSignUp}>
+  <fieldset className="fieldset">
 
           <label className="label">Name</label>
-          <input type="text" className="input" placeholder="Name" />
+          <input type="text" name='name' className="input" placeholder="Name" />
 
             <label className="label">Image_URL</label>
-          <input type="text" className="input" placeholder="Image_URL" />
+          <input type="text" name='image_url' className="input" placeholder="Image_URL" />
             
           <label className="label">Email</label>
-          <input type="email" className="input" placeholder="Email" />
+          <input type="email" name='email' className="input" placeholder="Email" />
           <label className="label">Password</label>
-          <input type="password" className="input" placeholder="Password" />
+          <input type="password" name='password' className="input" placeholder="Password" />
  
           <button className="btn btn-neutral mt-4">Sign Up</button>
           <button className="btn bg-white text-black border-[#e5e5e5]">
@@ -27,6 +92,12 @@ const SignUp = () => {
 </button>
           <p className='font-semibold'>Already have an account? <span className='text-secondary font-bold '><Link to="/auth/login">Login</Link></span></p>
         </fieldset>
+
+        {/* //error message */}
+        {
+          error && <p className='text-red-500'>{error}</p>
+        }
+      </form>
       </div>
     </div>
     </div>

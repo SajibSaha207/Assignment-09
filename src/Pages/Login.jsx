@@ -7,7 +7,8 @@ const Login = () => {
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
         <h2 className='font-semibold text-2xl text-center py-5'>Login Your Account</h2>
       <div className="card-body">
-        <fieldset className="fieldset">
+       <form>
+         <fieldset className="fieldset">
           <label className="label">Email</label>
           <input type="email" className="input" placeholder="Email" />
           <label className="label">Password</label>
@@ -20,6 +21,7 @@ const Login = () => {
 </button>
           <p className='font-semibold'>Don't have account? <span className='text-secondary font-bold '><Link to="/auth/signup">Sign up</Link></span></p>
         </fieldset>
+       </form>
       </div>
     </div>
     </div>
