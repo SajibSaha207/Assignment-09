@@ -18,7 +18,7 @@ const HeroSlider = () => {
         autoplay={{ delay: 1500, disableOnInteraction: false }}
         loop={true} 
         onSlideChange={() => console.log()}
-        onSwiper={(swiper) => console.log()}
+        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide><img src={H1} alt="" className='w-full h-[250px] object-cover' /></SwiperSlide>
         <SwiperSlide><img src={H2} alt="" className='w-full h-[250px] object-cover' /></SwiperSlide>

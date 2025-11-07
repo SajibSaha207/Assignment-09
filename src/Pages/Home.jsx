@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import SkillCards from '../Components/SkillCards';
 import TopRated from '../Components/TopRated';
 import HowItWorks from '../Components/HowItWorks';
+import SkillDetails from './SkillDetails';
+import { Link } from 'react-router';
  
 
 const Home = () => {
@@ -37,9 +39,10 @@ const Home = () => {
       </section>
      
 
+
    
     </div>
-     
+    
     
   );
    
