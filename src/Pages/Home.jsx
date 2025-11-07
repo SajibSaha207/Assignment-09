@@ -30,8 +30,14 @@ const Home = () => {
         <div className="grid md:grid-cols-3 gap-5">
           {skills.map((s) => (
             <SkillCards key={s.skillId} skill={s} />
+
           ))}
         </div>
+        {/* <div className="grid md:grid-cols-3 gap-5">
+          {skills.map((s)=>(
+            <SkillDetails key={s.skillId} skill={s} />
+          ))}
+        </div> */}
 
            <div className= "">
         <h2 className="font-bold text-2xl justify-self-start mt-10">Top Rated Provider</h2>
