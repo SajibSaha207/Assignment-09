@@ -106,7 +106,7 @@ const handleTooglePasswordShow = (event)=>{
   <fieldset className="fieldset">
 
           <label className="label">Name</label>
-          <input type="text" name='name' className="input" placeholder="Name" />
+          <input type="text" name='name' className="input" placeholder="Name"  />
 
             <label className="label">Image_URL</label>
           <input type="text" name='image_url' className="input" placeholder="Image_URL" />

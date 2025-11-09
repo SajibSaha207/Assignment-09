@@ -47,7 +47,7 @@ const Navbar = () => {
  <div className='login-btn flex gap-5'>
   {user ? (
     <>
-      {/* 🔹 User avatar */}
+   
       <img
         src={user.photoURL || userimg}
         alt=""
@@ -55,19 +55,19 @@ const Navbar = () => {
         title={user?.displayName || "User"}
       />
 
-      {/* 🔹 Logout button */}
+       
       <button onClick={handleLogout} className="btn btn-secondary">
         Logout
       </button>
     </>
   ) : (
     <>
-      {/* 🔹 Login button */}
+    
       <Link to="/auth/login" className="btn btn-secondary">
         Login
       </Link>
 
-      {/* 🔹 Signup button */}
+     
       <Link to="/auth/signup" className="btn btn-secondary">
         Sign Up
       </Link>
