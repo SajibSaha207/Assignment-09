@@ -1,5 +1,5 @@
  
-import { Link, useNavigate } from 'react-router';
+import { Link, NavLink, useNavigate } from 'react-router';
 import logo from "../assets/skillswap.jpg"
 import userimg from "../assets/user.png"
 import { AuthContext } from "../Provider/AuthProvider";
@@ -40,9 +40,20 @@ const Navbar = () => {
   {/* Links centered */}
   {/* <div className=''>{user && user.email}</div> */}
   <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-5 font-semibold">
-    <Link to='/'>Home</Link>
-    <Link to="/auth/skilldetails">Skill Details</Link>
-    <Link to="/auth/profile">My Profile</Link>
+    <NavLink  style={({ isActive }) => ({
+    color: isActive ? "red" : "black",
+    textDecoration: isActive ? "underline" : "none",
+  })} to='/'>Home</NavLink>
+
+    <NavLink  style={({ isActive }) => ({
+    color: isActive ? "red" : "black",
+    textDecoration: isActive ? "underline" : "none",
+  })} to="/auth/skilldetails">Skill Details</NavLink>
+  
+    <NavLink  style={({ isActive }) => ({
+    color: isActive ? "red" : "black",
+    textDecoration: isActive ? "underline" : "none",
+  })} to="/auth/profile">My Profile</NavLink>
   </div>
  <div className='login-btn flex gap-5'>
   {user ? (
