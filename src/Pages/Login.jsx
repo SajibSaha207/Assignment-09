@@ -11,10 +11,10 @@ const navigate =useNavigate();
 const location = useLocation();
 const from = location.state?.from?.pathname || "/";
 
-const handleDetailsLogin = () =>{
-  navigate(from,{replace:true});
+// const handleDetailsLogin = () =>{
+//   navigate(from,{replace:true});
 
-};
+// };
 
   // const navigate = useNavigate();
 

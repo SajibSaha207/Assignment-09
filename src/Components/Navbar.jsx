@@ -20,6 +20,9 @@ const Navbar = () => {
       navigate("/auth/login");
       });
    
+
+ 
+
       // setUser(false);
 
 
@@ -41,29 +44,45 @@ const Navbar = () => {
     <Link to="/auth/skilldetails">Skill Details</Link>
     <Link to="/auth/profile">My Profile</Link>
   </div>
-  <div className='login-btn flex gap-5'>
-     { user ? (
-      <>
-    <img src={user.photoURL || userimg} alt=""
-    className='  rounded   cursor-pointer'
-    title={user?.displayName || "User"}
-    /> 
-     {/* )}
-    {user ? ( */}
-  <button onClick={handleLogout} className="btn btn-secondary">
-    Logout
-  </button>
-  </>
-) : (
-  <Link to="/auth/login" className="btn btn-secondary">
-    Login
-  </Link>
-)}
+ <div className='login-btn flex gap-5'>
+  {user ? (
+    <>
+      {/* 🔹 User avatar */}
+      <img
+        src={user.photoURL || userimg}
+        alt=""
+        className="rounded cursor-pointer w-10 h-10"
+        title={user?.displayName || "User"}
+      />
+
+      {/* 🔹 Logout button */}
+      <button onClick={handleLogout} className="btn btn-secondary">
+        Logout
+      </button>
+    </>
+  ) : (
+    <>
+      {/* 🔹 Login button */}
+      <Link to="/auth/login" className="btn btn-secondary">
+        Login
+      </Link>
+
+      {/* 🔹 Signup button */}
+      <Link to="/auth/signup" className="btn btn-secondary">
+        Sign Up
+      </Link>
+    </>
+  )}
+
+
+
 
             
    
   </div>
 </div>
+
+
 
 
 
