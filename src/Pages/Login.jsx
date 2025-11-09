@@ -24,7 +24,7 @@ const handleGoogleSignIn = ()=>{
   // console.log('google button click')
   signInWithPopup(auth, googleProvider)
   .then((result)=>{
-      navigate("/", {replace: true});
+      navigate(from, {replace: true});
     console.log(result)
   })
   .catch(error =>{
@@ -50,7 +50,7 @@ setError('');
 
  signInWithEmailAndPassword(auth, email, password)
  .then(result =>{
-  navigate("/", {replace: true});
+  navigate(from, {replace: true});
   console.log(result.user)
  })
  .catch(error => {

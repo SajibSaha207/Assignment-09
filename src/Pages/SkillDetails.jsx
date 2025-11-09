@@ -1,4 +1,6 @@
 import toast, { Toaster } from "react-hot-toast";
+import { FaStar } from "react-icons/fa";
+import { MdAttachMoney } from "react-icons/md";
 import { useLoaderData } from "react-router";
 
 const SkillDetails = () => {
@@ -32,8 +34,12 @@ const SkillDetails = () => {
             />
             <h3 className="text-xl font-semibold mt-2">{skill.skillName}</h3>
             <p className="text-gray-600">{skill.description}</p>
-            <p className="font-semibold mt-2">💰 Price: ${skill.price}</p>
-            <p className="text-yellow-500">⭐ {skill.rating}</p>
+            <div className="flex justify-between">
+                <p className="flex items-center"><MdAttachMoney className="text-black-500" />
+                   <span>{skill.price}</span></p>
+                   <p className="flex items-center gap-2"><FaStar className="text-yellow-500" />
+                     <span>{skill.rating}</span></p> 
+                     </div>
           </div>
         ))}
       </div>
