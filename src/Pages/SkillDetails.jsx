@@ -2,6 +2,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { FaStar } from "react-icons/fa";
 import { MdAttachMoney } from "react-icons/md";
 import { useLoaderData } from "react-router";
+import 'animate.css';
 
 const SkillDetails = () => {
   const skills = useLoaderData() || [];
@@ -14,7 +15,7 @@ const SkillDetails = () => {
 
   return (
     <div className="container mx-auto p-6">
-      <h2 className="text-4xl font-bold mb-6 text-center">All Skill Details</h2>
+      <h2 className="text-4xl font-bold mb-6 text-center animate__animated animate__rubberBand">All Skill Details</h2>
 
       {skills.length === 0 && (
         <p className="text-center text-gray-500">No skills found.</p>
