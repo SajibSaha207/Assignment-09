@@ -5,6 +5,7 @@ import Footer from '../Components/Footer';
 import HeroSlider from '../Components/HeroSlider';
 import TopRated from '../Components/TopRated';
 import HowItWorks from '../Components/HowItWorks';
+import CommunityStats from '../Components/CommunityStats';
 
 const HomeLayout = () => {
     return (
@@ -21,6 +22,9 @@ const HomeLayout = () => {
             <section className='py-10'>
                <HowItWorks></HowItWorks>
             </section>
+           </section>
+           <section>
+            <CommunityStats></CommunityStats>
            </section>
              <section className='py-10'>
             <Footer></Footer>
