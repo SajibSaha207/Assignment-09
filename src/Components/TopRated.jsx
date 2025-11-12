@@ -12,7 +12,9 @@ const TopRated = () => {
             .sort((a,b)=> b.rating - a.rating).slice(0, 3);
             setRated(topRated);
         })
-        .catch((error)=> console.error("Error fetching top skill", error));
+        .catch((error)=>{ 
+            // console.error("Error fetching top skill", error)
+     } );
     },[])
 
     

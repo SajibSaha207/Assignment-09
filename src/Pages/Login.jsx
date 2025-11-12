@@ -25,10 +25,10 @@ const handleGoogleSignIn = ()=>{
   signInWithPopup(auth, googleProvider)
   .then((result)=>{
       navigate(from, {replace: true});
-    console.log(result)
+    // console.log(result)
   })
   .catch(error =>{
-    console.log(error)
+    // console.log(error)
   })
 
 }
@@ -45,16 +45,16 @@ const handleLogIn = (e) =>{
   e.preventDefault();
   const email = e.target.email.value;
   const password = e.target.password.value;
- console.log(email, password)
+//  console.log(email, password)
 setError('');
 
  signInWithEmailAndPassword(auth, email, password)
  .then(result =>{
   navigate(from, {replace: true});
-  console.log(result.user)
+  // console.log(result.user)
  })
  .catch(error => {
-  console.log(error.message)
+  // console.log(error.message)
   setError(error.message)
  })
 

@@ -46,7 +46,7 @@ const Profile = () => {
       setEditing(false); 
       alert("Profile updated successfully!");
     } catch (error) {
-      console.error("Error updating profile:", error);
+      // console.error("Error updating profile:", error);
       alert("Failed to update profile.");
     }
   };

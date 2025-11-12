@@ -18,10 +18,10 @@ const handleGoogleSignIn = ()=>{
   signInWithPopup(auth, googleProvider)
   .then((result)=>{
       navigate("/", {replace: true});
-    console.log(result)
+    // console.log(result)
   })
   .catch(error =>{
-    console.log(error)
+    // console.log(error)
   })
 
 }
@@ -38,7 +38,7 @@ const handleSignUp = (e) =>{
   e.preventDefault();
   const email = e.target.email.value;
   const password = e.target.password.value;
-  console.log('signup click',e.target.email.value)
+  // console.log('signup click',e.target.email.value)
 
   //password validation for 6 digit
   const passwordPattern = /^.{6,}$/;
@@ -48,7 +48,7 @@ const casePattern = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
 
 
   if(!passwordPattern.test(password)){
-    console.log('password not match')
+    // console.log('password not match')
     setError('Password must be 6 character or longer');
     return;
   }
@@ -66,14 +66,14 @@ setSucess(false);
   createUserWithEmailAndPassword(auth,email,password)
   .then(result =>{
     navigate("/", {replace: true});
- console.log('after create user',result.user)
+//  console.log('after create user',result.user)
  setSucess(true);
  e.target.reset();
   })
   
  
   .catch(error =>{
-    console.log('error happend',error.message)
+    // console.log('error happend',error.message)
     setError(error.message)
   })
 }

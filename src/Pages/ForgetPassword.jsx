@@ -16,7 +16,9 @@ const ForgetPassword = () => {
         alert("Please check your email for reset link!");
         window.location.href = "https://mail.google.com"; 
       })
-      .catch((error) => console.log(error.message));
+      .catch((error) =>{ 
+        // console.log(error.message)
+  });
   };
 
   return (

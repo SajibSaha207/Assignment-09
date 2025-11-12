@@ -1,16 +1,22 @@
-# React + Vite
+  project name: SkillSwap,
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live URL: https://skillswap-36b365.netlify.app/
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+  purpose: learn and share skill, and make a skillfull community,
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  key features:
+1. Email & Password Login / SignUp
+2. Google Sign-In Integration
+3. Forgot Password (reset password using email)
+4. Protected Route — (only login user can see)
+5.  Logged-in user-(show login user photo)
+6. Private Route with Redirect.
+7. Navbar Functionality
+8. Hero Slider Section
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm packages : 
+1. Animate.css 
+2. react-hot-toast 
+3.  swiper 
