@@ -13,7 +13,7 @@ import SkillDescription from "../Pages/SkillDescription";
  
 
 export const router = createBrowserRouter([
-  // 🏠 Main site layout (with Navbar, Hero, Footer)
+  
   {
     path: '/',
     element: <HomeLayout></HomeLayout>,
@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
     ],
   },
 
-  // 🔑 Auth layout (NO Navbar, NO Hero, NO Footer)
+  
   {
     path: '/auth',
     element: <AuthLayout></AuthLayout>,

@@ -91,8 +91,6 @@ const Navbar = () => {
           <IoMdMenu />
         </button>
       </div>
-
-      {/* 🔹 Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden z-50">
           {navLinks}

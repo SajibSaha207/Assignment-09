@@ -129,7 +129,7 @@ const handleTooglePasswordShow = (event)=>{
           <p className='font-semibold'>Already have an account? <span className='text-secondary font-bold '><Link to="/auth/login">Login</Link></span></p>
         </fieldset>
 
-        {/* //error message */}
+        
         {
           error && <p className='text-red-500'>{error}</p>
         }

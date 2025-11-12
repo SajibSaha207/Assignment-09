@@ -15,7 +15,7 @@ const Profile = () => {
 
     if (currentUser) {
       setUser({
-        name: currentUser.displayName || "No Name 😒", 
+        name: currentUser.displayName || "No Name !!", 
         email: currentUser.email, 
         image: currentUser.photoURL || 'https://api.dicebear.com/7.x/avataaars/svg'
       });
