@@ -22,7 +22,7 @@ const SkillCards = ({ skill }) => {
             <>
               {skill.description.slice(0, 150)}...
               <Link
-                to={`/skill-description/${skill.skillId}`}
+                to={`auth/skill-description/${skill.skillId}`}
                 className="text-primary font-bold cursor-pointer hover:underline ml-1"
               >
                 View Details

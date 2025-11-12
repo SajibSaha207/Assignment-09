@@ -9,6 +9,7 @@ import AuthLayout from "../Layout/AuthLayout";
 import SkillDetails from "../Pages/SkillDetails";
 import PrivateRoute from "./PrivateRoute";
 import ForgetPassword from "../Pages/ForgetPassword";
+import SkillDescription from "../Pages/SkillDescription";
  
 
 export const router = createBrowserRouter([
@@ -69,6 +70,16 @@ export const router = createBrowserRouter([
         ),
         loader:()=>fetch('/skill.json'),
       },
+      {
+  path: "skill-description/:id",
+  element: (
+    <PrivateRoute>
+      <SkillDescription />
+    </PrivateRoute>
+  ),
+  loader: () => fetch("/skill.json"),
+},
+
       
        
     ],
